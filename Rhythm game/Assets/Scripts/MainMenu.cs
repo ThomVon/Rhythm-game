@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public void ExitButton() {
+    public void Exit() {
         Application.Quit();      // Quits the game
+        Debug.Log("Game closed");   // This is only temporarely. It's only for testing
     }
-    // In the levels it starts the game
-    public void StartGame() {
-        //
-    }
+    // Game starting code is in the levelselector
 }
