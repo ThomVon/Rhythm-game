@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3518091502909084932}
   - component: {fileID: 7912050779985710285}
+  - component: {fileID: -3608659768679609071}
   m_Layer: 0
   m_Name: hit_effect
   m_TagString: Untagged
@@ -82,3 +83,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3608659768679609071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221199791325406873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92612fcbbddf6044a8f2a8c49153f10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 1
