@@ -33,21 +33,21 @@ public class NoteObject : MonoBehaviour
                 {
                     Debug.Log("Hit");
                     GameManager.instance.NormalHit();
-                    Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+                    Instantiate(hitEffect, transform.position = new Vector3 (-5, 4, 0), hitEffect.transform.rotation);
                 }
                 //Generates the score and effect for a good hit
-                else if(Mathf.Abs(transform.position.y) > 0.05f)
+                else if(Mathf.Abs(transform.position.y) > 0.10f)
                 {
                     Debug.Log("Good");
                     GameManager.instance.GoodHit();
-                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                    Instantiate(goodEffect, transform.position = new Vector3 (-5, 5, 0), goodEffect.transform.rotation);
                 }
                 //Generates the score and effect for a perfect hit
                 else
                 {
                     Debug.Log("Perfect");
                     GameManager.instance.PerfectHit();
-                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                    Instantiate(perfectEffect, transform.position = new Vector3(5, 5, 0), perfectEffect.transform.rotation);
                 }
             }
         }
