@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311912, g: 0.3807398, b: 0.3587272, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2850,7 +2850,7 @@ GameObject:
   - component: {fileID: 553755429}
   - component: {fileID: 553755428}
   m_Layer: 0
-  m_Name: lofi_aesthetic_vaporwave_for_studying
+  m_Name: Metal song
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2866,7 +2866,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 57b9f6d2aa75a434483472256ef800eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 98b67b4b35b0a864a976a3e5d8ae32f9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5311,7 +5311,7 @@ PrefabInstance:
     - target: {fileID: 9181985623241623074, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 57b9f6d2aa75a434483472256ef800eb, type: 3}
+      objectReference: {fileID: 8300000, guid: 98b67b4b35b0a864a976a3e5d8ae32f9, type: 3}
     - target: {fileID: 9181985623241623075, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5367,6 +5367,10 @@ PrefabInstance:
     - target: {fileID: 9181985623241623077, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: algorithm
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181985623241623077, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
+      propertyPath: blockSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9181985623241623077, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: maxOutput
