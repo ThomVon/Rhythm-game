@@ -39,7 +39,7 @@ namespace Highscores {
 
             // if there is to many entries
             if(savedScores.highscores.Count > maxEntries) {
-                savedScores.highscores.RemoveRange(maxEntries, savedScores.Count - maxEntries);
+                savedScores.highscores.RemoveRange(maxEntries, savedScores.highscores.Count - maxEntries);
             }
 
             UpdateUI(savedScores);
