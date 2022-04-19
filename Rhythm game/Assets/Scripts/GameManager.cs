@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
     public GameObject resultsScreen;
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
-
     // Start is called before the first frame update
     void Start()
     {

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Rhythm Game/Scenes/level 2.unity
     guid: 8487a2e4a983a794c83171216709f30c
+  - enabled: 1
+    path: Assets/Rhythm Game/Scenes/rock level.unity
+    guid: dbf31f364f0f1b347b6a658f1f70ad80
   m_configObjects: {}
