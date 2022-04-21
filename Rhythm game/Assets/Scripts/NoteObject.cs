@@ -53,6 +53,39 @@ public class NoteObject : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+    {
+        if (canBePressed)
+        {
+            gameObject.SetActive(false);
+
+            //GameManager.instance.NoteHit();
+
+            //Generates the score and effect for a hit.
+            if (Mathf.Abs(transform.position.y) > 0.25)
+            {
+                Debug.Log("Hit");
+                GameManager.instance.NormalHit();
+                Instantiate(hitEffect, transform.position = new Vector3(-5, 4, 0), hitEffect.transform.rotation);
+            }
+            //Generates the score and effect for a good hit
+            else if (Mathf.Abs(transform.position.y) > 0.10f)
+            {
+                Debug.Log("Good");
+                GameManager.instance.GoodHit();
+                Instantiate(goodEffect, transform.position = new Vector3(-5, 5, 0), goodEffect.transform.rotation);
+            }
+            //Generates the score and effect for a perfect hit
+            else
+            {
+                Debug.Log("Perfect");
+                GameManager.instance.PerfectHit();
+                Instantiate(perfectEffect, transform.position = new Vector3(5, 5, 0), perfectEffect.transform.rotation);
+            }
+        }
+    }
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Activator")

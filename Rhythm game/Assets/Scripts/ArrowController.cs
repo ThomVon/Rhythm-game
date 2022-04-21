@@ -7,7 +7,7 @@ public class ArrowController : MonoBehaviour
     private SpriteRenderer theSR;
     public Sprite defaultImage;
     public Sprite pressedImage;
-
+    public GameObject pressButton;
     public KeyCode KeyToPress;
 
     // Start is called before the first frame update
@@ -19,6 +19,7 @@ public class ArrowController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(Input.GetKeyDown(KeyToPress))
         {
             theSR.sprite = pressedImage;
@@ -28,5 +29,15 @@ public class ArrowController : MonoBehaviour
         {
             theSR.sprite = defaultImage;
         }
+    }
+
+    void OnMouseDown()
+    {
+        theSR.sprite = pressedImage;
+    }
+
+    void OnMouseUp()
+    {
+        theSR.sprite = defaultImage;
     }
 }
