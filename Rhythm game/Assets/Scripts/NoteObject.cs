@@ -52,7 +52,7 @@ public class NoteObject : MonoBehaviour
             }
         }
     }
-
+    // Version used for mobile touch controlls or wanting to use mouse instead of the buttons
     void OnMouseDown()
     {
         if (canBePressed)

@@ -30,7 +30,7 @@ public class ArrowController : MonoBehaviour
             theSR.sprite = defaultImage;
         }
     }
-
+    // Used for mobile touch controlls
     void OnMouseDown()
     {
         theSR.sprite = pressedImage;
