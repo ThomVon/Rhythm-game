@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ScoreUI : MonoBehaviour
+public class ScoreUi : MonoBehaviour
 {
     public RowUi rowUi;
     public ScoreManager scoreManager;
