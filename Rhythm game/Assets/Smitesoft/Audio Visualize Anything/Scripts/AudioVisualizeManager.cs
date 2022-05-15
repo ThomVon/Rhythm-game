@@ -104,6 +104,14 @@ public class AudioVisualizeManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(Input.anyKeyDown)
+        {
+            audioSource.Play();
+        }
+    }
+
     private void ClipPrep()
     {
         if (audioSource.clip != null)

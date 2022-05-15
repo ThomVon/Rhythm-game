@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 0d9d0196b67ce3544b4947c7994f9db7, type: 3}
   pressedImage: {fileID: 21300000, guid: bb24e78df798b21479c13fa30c499f57, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 274
 --- !u!50 &42740292
 Rigidbody2D:
@@ -2144,6 +2145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: ad2ed9612a4ad8847adaf6613b6fac6f, type: 3}
   pressedImage: {fileID: 21300000, guid: 540ae0fb409dcff4c9d68698b62d17cd, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 273
 --- !u!50 &335185283
 Rigidbody2D:
@@ -2565,6 +2567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: af989cfc3c359d7479cdc2f6074bb29c, type: 3}
   pressedImage: {fileID: 21300000, guid: 325d0532dc27f784e85386c8f06efdea, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 276
 --- !u!50 &450328918
 Rigidbody2D:
@@ -9100,6 +9103,7 @@ MonoBehaviour:
   scorePerNote: 100
   scorePerGoodNote: 125
   scorePerPerfectNote: 150
+  scoreTracker: 0
   currentMultiplier: 1
   multiplierTracker: 0
   multiplierTresholds: 040000000800000010000000
@@ -10144,6 +10148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 83191ea6a29d5ea4382cd271d6628984, type: 3}
   pressedImage: {fileID: 21300000, guid: 2978711e257c1c34b98cf936a30f46ea, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 275
 --- !u!50 &1954822629
 Rigidbody2D:

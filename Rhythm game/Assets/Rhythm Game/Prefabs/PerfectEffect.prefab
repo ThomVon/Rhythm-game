@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 727914713205339661}
   - component: {fileID: 727914713205339658}
   - component: {fileID: 5751148958554256298}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PerfectEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92612fcbbddf6044a8f2a8c49153f10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 1
+  lifetime: 3
 --- !u!1 &6805207016572808379
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 1383727307009436616}
   - component: {fileID: 5871264836865287779}
   - component: {fileID: 811480211465670200}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

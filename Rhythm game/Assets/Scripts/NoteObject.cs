@@ -93,6 +93,20 @@ public class NoteObject : MonoBehaviour
             canBePressed = true;
         }
     }
+    //2 set of locations for the miss effect
+    private List<Vector3> m_positions = new List<Vector3>
+    {
+        new Vector3(3, 1, 0),
+        new Vector3(-3, 1, 0),
+    };
+    //chooses between the two random positions to spawn the miss effect
+    Vector3 GetRandomPosition()
+    {
+        Vector3 position = m_positions[Random.Range(0, m_positions.Count)];
+        m_positions.Remove(position);
+        return position;
+    }
+
     //Generates the score and effect for a miss
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -101,7 +115,9 @@ public class NoteObject : MonoBehaviour
             canBePressed = false;
 
             GameManager.instance.NoteMiss();
-            Instantiate(missEffect, transform.position, missEffect.transform.rotation);
+            Instantiate(missEffect, transform.position = GetRandomPosition() , missEffect.transform.rotation);
+            Destroy(gameObject);
         }
     }
+
 }

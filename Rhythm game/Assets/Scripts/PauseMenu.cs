@@ -13,14 +13,26 @@ public class PauseMenu : MonoBehaviour
         // Pauses the game
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource a in audios)
+        {
+            a.Pause();
+        }
     }
 
     public void Resume() {
         // Resumes the game
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource a in audios)
+        {
+            a.UnPause();
+        }
     }
 
     public void Home(int sceneID) {

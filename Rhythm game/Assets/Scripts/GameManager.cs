@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public int scorePerNote = 100;
     public int scorePerGoodNote = 125;
     public int scorePerPerfectNote = 150;
+    public int scoreTracker;
 
     //ints for the multiplier funktion for score
     public int currentMultiplier;
@@ -41,6 +42,9 @@ public class GameManager : MonoBehaviour
     public GameObject resultsScreen;
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
+    //Score effects objects
+    //public GameObject firstEffect; work in progress...
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +52,7 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
+        
 
         totalNotes = FindObjectsOfType<NoteObject>().Length;
     }
@@ -67,7 +72,7 @@ public class GameManager : MonoBehaviour
         }
          else
         {
-            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy && Time.timeScale != 0f)
             {
                 resultsScreen.SetActive(true);
 
@@ -109,6 +114,12 @@ public class GameManager : MonoBehaviour
                 finalScoreText.text = currentScore.ToString();
             }
         }
+        // Scoreboard effects code work in progress...
+       // if(currentScore > 10000)
+        //{
+            //effectScore();
+            
+        //}
     }
     //void for hitting the correct note
     public void NoteHit()
@@ -173,4 +184,9 @@ public class GameManager : MonoBehaviour
         //scoreboard update
         missedHits++;
     }
+    //public void effectScore() work in progress...
+    //{
+        //Instantiate(firstEffect, transform.position = new Vector3(5, 5, 0), firstEffect.transform.rotation);
+        //Debug.Log("AMAZING LOL WOW");
+    //}
 }
