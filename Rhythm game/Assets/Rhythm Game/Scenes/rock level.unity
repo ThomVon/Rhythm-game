@@ -2595,6 +2595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: ad2ed9612a4ad8847adaf6613b6fac6f, type: 3}
   pressedImage: {fileID: 21300000, guid: 540ae0fb409dcff4c9d68698b62d17cd, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 273
 --- !u!212 &424020537
 SpriteRenderer:
@@ -5241,6 +5242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 83191ea6a29d5ea4382cd271d6628984, type: 3}
   pressedImage: {fileID: 21300000, guid: 2978711e257c1c34b98cf936a30f46ea, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 275
 --- !u!212 &878570065
 SpriteRenderer:
@@ -11874,6 +11876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: af989cfc3c359d7479cdc2f6074bb29c, type: 3}
   pressedImage: {fileID: 21300000, guid: 325d0532dc27f784e85386c8f06efdea, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 276
 --- !u!212 &1686370617
 SpriteRenderer:
@@ -13162,6 +13165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 0d9d0196b67ce3544b4947c7994f9db7, type: 3}
   pressedImage: {fileID: 21300000, guid: bb24e78df798b21479c13fa30c499f57, type: 3}
+  pressButton: {fileID: 0}
   KeyToPress: 274
 --- !u!212 &1815678129
 SpriteRenderer:
@@ -15438,6 +15442,7 @@ MonoBehaviour:
   scorePerNote: 100
   scorePerGoodNote: 125
   scorePerPerfectNote: 150
+  scoreTracker: 0
   currentMultiplier: 1
   multiplierTracker: 0
   multiplierTresholds: 040000000800000010000000
@@ -15456,6 +15461,9 @@ MonoBehaviour:
   missesText: {fileID: 1428279445}
   rankText: {fileID: 1829699091}
   finalScoreText: {fileID: 1663949857}
+  firstEffect: {fileID: 2658408797211152933, guid: 0e989e43a300eca44a284ec990b9adc8, type: 3}
+  secondEffect: {fileID: 7823911957453105266, guid: 7b6f65846b6db944eb4627aecddae74c, type: 3}
+  thirdEffect: {fileID: 5169495276796873822, guid: 6d4dd248da6deed498cf08a35daefe98, type: 3}
 --- !u!4 &2110967563
 Transform:
   m_ObjectHideFlags: 0

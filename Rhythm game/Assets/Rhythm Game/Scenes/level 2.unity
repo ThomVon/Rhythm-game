@@ -6145,8 +6145,8 @@ Transform:
   - {fileID: 1827997615}
   - {fileID: 93509671}
   - {fileID: 625206998}
-  m_Father: {fileID: 1193923412}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &673323990
 MonoBehaviour:
@@ -6155,7 +6155,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673323988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 581291be03d2e954f96cdc30c62f6968, type: 3}
   m_Name: 
@@ -10789,6 +10789,9 @@ MonoBehaviour:
   missesText: {fileID: 1097954595}
   rankText: {fileID: 818721131}
   finalScoreText: {fileID: 213706563}
+  firstEffect: {fileID: 2658408797211152933, guid: 0e989e43a300eca44a284ec990b9adc8, type: 3}
+  secondEffect: {fileID: 7823911957453105266, guid: 7b6f65846b6db944eb4627aecddae74c, type: 3}
+  thirdEffect: {fileID: 5169495276796873822, guid: 6d4dd248da6deed498cf08a35daefe98, type: 3}
 --- !u!4 &1193923412
 Transform:
   m_ObjectHideFlags: 0
@@ -10803,7 +10806,6 @@ Transform:
   - {fileID: 127663709}
   - {fileID: 1230262546}
   - {fileID: 128670249}
-  - {fileID: 673323989}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

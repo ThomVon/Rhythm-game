@@ -9122,6 +9122,9 @@ MonoBehaviour:
   missesText: {fileID: 325538177}
   rankText: {fileID: 1294892955}
   finalScoreText: {fileID: 745663033}
+  firstEffect: {fileID: 2658408797211152933, guid: 0e989e43a300eca44a284ec990b9adc8, type: 3}
+  secondEffect: {fileID: 7823911957453105266, guid: 7b6f65846b6db944eb4627aecddae74c, type: 3}
+  thirdEffect: {fileID: 5169495276796873822, guid: 6d4dd248da6deed498cf08a35daefe98, type: 3}
 --- !u!4 &1755552335
 Transform:
   m_ObjectHideFlags: 0

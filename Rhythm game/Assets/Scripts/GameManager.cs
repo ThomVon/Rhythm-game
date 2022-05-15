@@ -43,7 +43,12 @@ public class GameManager : MonoBehaviour
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
     //Score effects objects
-    //public GameObject firstEffect; work in progress...
+    public GameObject firstEffect;
+    public GameObject secondEffect;
+    public GameObject thirdEffect;
+    private bool scoreReached1 = true;
+    private bool scoreReached2 = true;
+    private bool scoreReached3 = true;
 
     // Start is called before the first frame update
     void Start()
@@ -114,12 +119,29 @@ public class GameManager : MonoBehaviour
                 finalScoreText.text = currentScore.ToString();
             }
         }
-        // Scoreboard effects code work in progress...
-       // if(currentScore > 10000)
-        //{
-            //effectScore();
+        // Scoreboard effects code work
+        if (currentScore > 10000 && scoreReached1 ==true)
             
-        //}
+        {
+            effectScore1();
+            scoreReached1 = false;
+        }
+        //
+        if (currentScore > 20000 && scoreReached2 == true)
+
+        {
+            effectScore2();
+            scoreReached2 = false;
+        }
+        //
+        if (currentScore > 30000 && scoreReached3 == true)
+
+        {
+            effectScore3();
+            scoreReached3 = false;
+        }
+
+
     }
     //void for hitting the correct note
     public void NoteHit()
@@ -184,9 +206,19 @@ public class GameManager : MonoBehaviour
         //scoreboard update
         missedHits++;
     }
-    //public void effectScore() work in progress...
-    //{
-        //Instantiate(firstEffect, transform.position = new Vector3(5, 5, 0), firstEffect.transform.rotation);
-        //Debug.Log("AMAZING LOL WOW");
-    //}
+    //spawns first effect
+    public void effectScore1()
+    {
+        Instantiate(firstEffect, transform.position = new Vector3(6, 6, 0), firstEffect.transform.rotation);
+    }
+    //spawns second effect
+    public void effectScore2()
+    {
+        Instantiate(secondEffect, transform.position = new Vector3(-6, 6, 0), firstEffect.transform.rotation);
+    }
+    //spawns third effect
+    public void effectScore3()
+    {
+        Instantiate(thirdEffect, transform.position = new Vector3(6, 6, 0), firstEffect.transform.rotation);
+    }
 }

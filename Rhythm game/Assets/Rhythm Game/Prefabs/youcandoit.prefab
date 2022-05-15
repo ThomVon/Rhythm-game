@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8188487660792426166}
   - component: {fileID: 2149048867743307626}
+  - component: {fileID: 8671052729820103340}
   m_Layer: 0
   m_Name: youcandoit
   m_TagString: Untagged
@@ -82,3 +83,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8671052729820103340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658408797211152933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e7b466e22223443b159203d3323b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTime: 5
